@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articles = {
-    'article-One': {
+    'article-one': {
         title: 'article-one | Ram',
         date: '23 sep 2016',
         heading: 'Article One',
@@ -17,7 +17,7 @@ var articles = {
         <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
         </p>`
         },
-    'article-Two': {
+    'article-two': {
         title: 'article-two | Ram',
         date: '19 sep 2016',
         heading: 'Article Two',
@@ -25,7 +25,7 @@ var articles = {
         <p> Article two's content page is here. All its content will be displayed in this area.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
         </p>
         `},
-    'article-Three' : {
+    'article-three' : {
         title: 'article-Three | Ram',
         date: '22 sep 2016',
         heading: 'Article Three',
