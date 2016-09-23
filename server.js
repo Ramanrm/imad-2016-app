@@ -15,14 +15,14 @@ var articles = {
         <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
         </p>
         <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
-        </p>`
-        },
+        </p>
+        `},
     'article-two': {
         title: 'article-two | Ram',
         date: '19 sep 2016',
         heading: 'Article Two',
         content: `
-        <p> Article two's content page is here. All its content will be displayed in this area.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
+        <p> Article twos content page is here. All its content will be displayed in this area.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
         </p>
         `},
     'article-three' : {
@@ -30,7 +30,7 @@ var articles = {
         date: '22 sep 2016',
         heading: 'Article Three',
         content: `
-        <p> Article three's content will be displayed here.  the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
+        <p> Article threes content will be displayed here.  the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
         </p>
         `}
 };
@@ -83,7 +83,9 @@ app.get('/:articleName', function(req,res){
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
