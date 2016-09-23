@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var articles = {
     'article-One': {
         title: 'article-one | Ram',
-        date: '23 sep, 2016',
+        date: '23 sep 2016',
         heading: 'Article One',
         content: `
         <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
@@ -19,7 +19,7 @@ var articles = {
         },
     'article-Two': {
         title: 'article-two | Ram',
-        date: '19 sep, 2016',
+        date: '19 sep 2016',
         heading: 'Article Two',
         content: `
         <p> Article two's content page is here. All its content will be displayed in this area.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
@@ -27,7 +27,7 @@ var articles = {
         `},
     'article-Three' : {
         title: 'article-Three | Ram',
-        date: '22 sep, 2016',
+        date: '22 sep 2016',
         heading: 'Article Three',
         content: `
         <p> Article three's content will be displayed here.  the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
