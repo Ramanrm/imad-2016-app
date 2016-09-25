@@ -10,11 +10,9 @@ var articles = {
         date: '23 sep 2016',
         heading: 'Article One',
         content: `
-        <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
+        <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
         </p>
-        <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
-        </p>
-        <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
+        <p> the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.the content will be displayed here.
         </p>
         `},
     'article-two': {
@@ -36,11 +34,11 @@ var articles = {
 };
 
 var createTemplate = function(data) {
-    var date = data.date;
     var content = data.content;
     var heading = data.heading;
     var title = data.title;
-   
+    var date = data.date;
+
     var htmlTemplate = `
     <html>
         <head>
@@ -70,6 +68,13 @@ var createTemplate = function(data) {
     `;
     return htmlTemplate;
 };
+
+var counter = 0;
+app.get('/counter', function(req,res) {
+	counter = counter + 1;
+	res.send(counter.toString());
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -79,21 +84,17 @@ app.get('/:articleName', function(req,res){
     res.send(createTemplate(articles[articleName]));
 });
 
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-<<<<<<< HEAD
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-=======
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
->>>>>>> 7df1c59e1714cc265c31c55bb7148a96f46ae1ed
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });

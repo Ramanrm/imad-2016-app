@@ -1,15 +1,31 @@
-console.log('Loaded!');
+var button = document.getElementById('counter');
 
 
-var img = document.getElementById('img');
-marginLeft=0;
-function moveRight() {
-   marginLeft = marginLeft+5;
-   img.style.marginLeft = marginLeft+ 'px';
-}
-img.onclick = function() {
-   var interval = setInterval(moveRight,50);
+button.onclick = function() {
+button.innerHTML= "click this";
+//create a request object
+var request = new XMLHttpRequest();
+alert("request object created");
+//capture the response and store in a variable
+request.onreadystatechange = function() {
+alert("entering function");
+	if(request.readyState === XMLHttpRequest.done) {
+alert("inside if 1");
+		if(request.status === 200){
+alert("inside if 2");
+			var counter = request.responseText;
+			//render the variable's value in the correct span
+			var span = getElementById('count');
+			span.innerHTML = counter.toString();
+		
+		}
+	}
+};
+//make a request
+request.open('GET','localhost:8080/counter',true);
+request.send(null);
 };
 
-alert("i am loading");
+
+
 
