@@ -2,113 +2,193 @@
 <html>
     <head>
   		<meta charset="UTF-8" />
-  		<meta name="viewport " content= "width=d evice-width, initial-scale=1 ">
+  		<meta name="viewport " content= "width=device-width, initial-scale=1 ">
+  		<link rel="stylesheet" type="text/css" href="style.css">
   		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" ">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	   	<script type="text/javascript" src="main.js"></script>
    		<title>Profile | Ram</title>
 	</head>
     <body>
-        
-		
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-	      				</button>
-						<img src="img.jpg" class="navbar-brand brandimg" alt="Brand"/>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav nav-pills pull-right">
-						<li class="pill"><a href="#">Home</a></li>
-						<li class="pill"><a href="#about">About</a></li>
-						<li class="pill dropdown"><a class= "dropdown-toggle" data-toggle="dropdown" href="#">Personal<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#biodata">Bio-data</a></li>
-								<li><a href="#hobbies">Hobbies</a></li>
-								<li><a href="#favorites">Favorites</a></li>		
-							</ul>
-						</li>
-						<li class="pill dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#profession">Profession<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-							<li><a href="#qualification">Qualification</a></li>
-							<li><a href="#certification">Certification</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#work">Work Exp</a></li>
-							</ul>
-						</li>
-						<li class="pill"><a href="#contact">Get in touch</a></li>
-						</ul> 
-					<div>	
-				<div>
-			</nav>
-
-			<div class="jumbotron row">
-				<div class="col-md-4">
-					<div id=#about>
-					
-
-					</div>
+    	<!-- naviagtion bar -->
+		<nav class="navbar navbar-default navbar-fixed-top"">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+      				</button>
+					<img src="img/img.jpg" class="navbar-brand img-circle brandimg" alt="Brand"/>
 				</div>
-				<div class="col-md-4">
-					<div id=#biodata>
-					
-					</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav nav-pills pull-right">
+					<li class="pill"><a href="#">Home</a></li>
+					<li class="pill"><a href="#about">About</a></li>
+					<li class="pill dropdown"><a class= "dropdown-toggle" data-toggle="dropdown" href="#">Personal<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#biodata">Bio-data</a></li>
+							<li><a href="#hobbies">Hobbies</a></li>
+							<li><a href="#favorites">Favorites</a></li>		
+						</ul>
+					</li>
+					<li class="pill dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#profession">Profession<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						<li><a href="#qualification">Qualification</a></li>
+						<li><a href="#certification">Certification</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#work">Work Exp</a></li>
+						</ul>
+					</li>
+					<li class="pill"><a href="#contact">Get in touch</a></li>
+					</ul> 
+				<div>	
+			<div>
+		</nav>
+		<!-- Thumbnail section -->
+		<div class="row row-eq-height">
+			<div class="panel panel-primary col-md-12 col-sm-12  nopadding " id= "about">
+				<div class="panel-heading"> 
+					<h3 class="panel-title">About</h3>
 				</div>
-				<div class="col-md-4">
-					<div id=#hobbies>
-					
-					</div>
-				</div>
+				<div class="panel-body">
+					<p class="pre-scrollable">
+						I am Ramanathan. I did Mechanical engineering, but I like software development too. So I was pondering for opportunities to make my hands dirty. Atlast, zeroed-in in Nptel's Introduction to Modern Application Development. It gave me a crisp idea how internet works and how web application are developed. Now, I am trying to leverage the work environment provided to us as the part of the course to get some hands on.
 
+						Thanks Tanmai Gopal and Nptel for this opportunity.
+					</p>
+					<br/> 
+					<button type="button" class="btn btn-md btn-primary">More <span class="glyphicon glyphicon-menu-right"></span></button>
+				</div>
 			</div>
-			<div class="jumbotron row">
-				<div class="col-md-4">
-					<div id=#about>
-					
-
-					</div>
+		</div>
+		<div class="row row-eq-height">
+			<div class="col-md-3 col-sm-5 panel panel-primary nopadding" id= "biodata">
+				<div class="panel-heading">
+					<h3 class="panel-title">Bio Data</h3>
 				</div>
-				<div class="col-md-4">
-					<div id=#biodata>
-					
-					</div>
+				<div class="panel-body">
+					<table class="table table-hover content">
+						<tr>
+							<th>Name</th>
+							<td>Ramanathan Raman</td>
+						</tr>
+						<tr>
+							<th>Father's Name</th>
+							<td>Raman Kannappan</td>
+						</tr>
+						<tr>
+							<th>Mother's Name</th>
+							<td>Tamil Selvi</td>
+						</tr>
+						<tr>
+							<th>Date of birth</th>
+							<td>15 Oct, 1992</td>
+						</tr>
+						<tr>
+							<th>Nationality</th>
+							<td>Indian</td>
+						</tr>
+						<tr>
+							<th>Gender</th>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<th>Qualification</th>
+							<td>B.E. Mechanical</td>
+						</tr>
+						<tr>
+						<tr>
+							<th>College</th>
+							<td>Government College Of Engineering</td>
+						</tr>
+						<tr>
+							<th>Languages</th>
+							<td>English, Tamil, French</td>
+						</tr>
+					</table>
+					<br/> 
+					<button type="button" class="btn btn-md btn-primary">More <span class="glyphicon glyphicon-menu-right"></span></button>
 				</div>
-				<div class="col-md-4">
-					<div id=#hobbies>
-					
-					</div>
-				</div>
-
-			</div><div class="jumbotron row">
-				<div class="col-md-4">
-					<div id=#about>
-					
-
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div id=#biodata>
-					
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div id=#hobbies>
-					
-					</div>
-				</div>
-
 			</div>
+			<div class="col-md-3 col-sm-6 col-md-offset-1 panel panel-primary nopadding" id="hobbies">
+				<div class="panel-heading">
+					<h3 class="panel-title">Hobbies</h3>
+				</div>
+				<div class="panel-body">
+					<div id="hobbyCarousel" class="carousel slide" data-ride="carousel">
+						<!-- switch buttons -->
+						<ol class="carousel-indicators">
+						<li data-target="#hobbyCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#hobbyCarousel" data-slide-to="1"></li>
+						<li data-target="#hobbyCarousel" data-slide-to="2"></li>
+						<li data-target="#hobbyCarousel" data-slide-to="3"></li>
+						</ol>
+						<!-- carousel content -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/quilling.jpg" alt="Quilling">
+								<div class="carousel-caption">
+								<h3> Quilling </h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/books.jpg" alt="Reading books">
+								<div class="carousel-caption">
+								<h3> Reading Books </h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/gardening.jpg" alt="Gardening">
+								<div class="carousel-caption">
+								<h3>Gardening</h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/elearning.jpg" alt="Elearning">
+								<div class="carousel-caption">
+								<h3>Elearning</h3>
+								</div>
+							</div>
 
-				
-
+						</div>
+						<br/> 
+						<button type="button" class="btn btn-md btn-primary">More <span class="glyphicon glyphicon-menu-right"></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-md-offset-1 panel panel-primary nopadding" id="favorites" style="padding-left: 2%">
+				<div class="panel-heading">
+					<h3 class="panel-title">Favorites</h3>
+				</div>
+				<div class="panel-body">
+					<table class="table table-hover content">
+						<tr>
+							<th>Food</th>
+							<td><img src="img/briyani.jpg" alt="Briyani"></td>
+						</tr>
+						<tr>
+							<th rowspan="2">Sport</th>
+							<td><img src="img/shuttle.jpg" alt="Shuttle"></td>
+						</tr>
+						<tr>
+							<td><img src="img/carrom.jpg" alt="Carrom"></td>
+						</tr>
+						<tr>
+							<th>Field of Study</th>
+							<td><img src="img/math.jpg" alt="Mathematics"></td>
+						</tr>
+						<tr>
+							<th>Place</th>
+							<td><img src="img/chennai.jpg" alt="Chennai"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+					
+		</div>
 		
-
-		
-		
-		<script type="text/javascript" src="main.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
 </html>
+
